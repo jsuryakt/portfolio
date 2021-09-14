@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --primary-color: #7C3AED;
+    --primary-color: #3e3d57
+    ;
+    --secondary-color: #F45905;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0px
 }
 
@@ -36,23 +38,25 @@ hr {
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    text-align: center;
+    max-width: 157px;
 }
 
 .link-primary {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 0.5rem;
     color: white;
     display: block;
-    max-width: 140px;
+    /* max-width: 150px; */
     margin: 1rem 1rem 1rem 0rem;
 }
 
 .link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
     display: block;
-    max-width: 140px;
+    /* max-width: 140px; */
     margin: 1rem 1rem 1rem 0rem;
 }
 
@@ -75,8 +79,9 @@ hr {
 .navigation {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 0.7rem;
     border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .navigation .nav-brand {
@@ -84,7 +89,7 @@ hr {
 }
 
 .navigation .nav-pills {
-    text-align: right;
+    text-align: center;
 }
 
 .navigation .link {
@@ -100,7 +105,6 @@ hr {
 .hero {
     padding: 2rem;
     padding-top: 5rem;
-
 }
 
 .hero .hero-img {
@@ -110,14 +114,25 @@ hr {
     margin: auto;
 }
 
+.svg {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+
 .hero .hero-heading {
     text-align: center;
-    padding-top: 1rem;
     color: var(--dark-gray);
 }
 
 .hero .hero-heading .heading-inverted {
     color: var(--primary-color);
+}
+
+.contact-center {
+    margin: auto;
+    margin-top: 2rem;
 }
 
 /** sections **/
@@ -139,10 +154,11 @@ hr {
 
 .footer {
     background-color: var(--primary-color);
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .footer .link {
@@ -152,6 +168,13 @@ hr {
 .footer .footer-header {
     font-weight: bold;
     font-size: large;
+}
+
+.footer-light {
+    text-decoration: none;
+    margin: 0.5rem 0rem;
+    font-weight: lighter;
+    color: var(--dark-gray);
 }
 
 .footer ul {
