@@ -115,10 +115,10 @@ hr {
 }
 
 .svg {
-    width: 300px;
+    width: 200px;
     display: block;
     margin: auto;
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
 }
 
 
@@ -180,7 +180,6 @@ hr {
 
 .footer .footer-header {
     font-weight: bold;
-    font-size: large;
 }
 
 .footer-light {
