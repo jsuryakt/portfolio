@@ -138,7 +138,7 @@ hr {
 }
 
 .div-contact-margin {
-  margin: 2rem 0rem;
+  text-align: center;
 }
 
 .anchor-center {
@@ -147,10 +147,11 @@ hr {
 }
 
 .hero .div-contact-margin .anchor-center {
-    font-size: large;
+  font-size: large;
 }
 
 .hero .text-center {
+  margin-top: 2rem;
   text-align: center;
   width: 100%;
   /* position:absolute; */
