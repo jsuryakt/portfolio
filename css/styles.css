@@ -141,6 +141,11 @@ hr {
   text-align: center;
 }
 
+.hero .div-contact-margin .link {
+    margin-left: 2.1rem;
+    margin-right: 0rem;
+}
+
 .anchor-center {
   display: block;
   margin: auto;
