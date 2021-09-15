@@ -141,10 +141,13 @@ hr {
   margin: 2rem 0rem;
 }
 
-.contact-center {
+.anchor-center {
   display: block;
   margin: auto;
-  font-size: large;
+}
+
+.hero .div-contact-margin .anchor-center {
+    font-size: large;
 }
 
 .hero .text-center {
@@ -177,6 +180,7 @@ hr {
   color: white;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  margin-top: 4rem;
 }
 
 .footer .footer-link {
