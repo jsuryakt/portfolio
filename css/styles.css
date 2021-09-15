@@ -51,7 +51,7 @@ hr {
   color: white;
   /* display: block; */
   /* max-width: 150px; */
-  margin: 1rem 1rem 1rem 0rem;
+  margin: 1rem 0.5rem 1rem 0rem;
 }
 
 .link-secondary {
@@ -60,7 +60,7 @@ hr {
   border: 1px solid var(--secondary-color);
   /* display: block; */
   /* max-width: 140px; */
-  margin: 1rem 1rem 1rem 0rem;
+  margin: 1rem 0rem 1rem 0.5rem;
 }
 
 /** look into BEM naming convention for CSS **/
@@ -141,10 +141,10 @@ hr {
   text-align: center;
 }
 
-.hero .div-contact-margin .link {
-    margin-left: 2.1rem;
+/* .hero .div-contact-margin .link {
+    margin-left: 1.5rem;
     margin-right: 0rem;
-}
+} */
 
 .anchor-center {
   display: block;
