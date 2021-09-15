@@ -118,6 +118,7 @@ hr {
     width: 300px;
     display: block;
     margin: auto;
+    padding: 3rem 2rem;
 }
 
 
@@ -126,13 +127,19 @@ hr {
     color: var(--dark-gray);
 }
 
+.hero p.hero-heading {
+    margin-bottom: 3rem;
+}
+
 .hero .hero-heading .heading-inverted {
     color: var(--primary-color);
 }
 
+.div-contact-margin {
+    margin:2rem 0rem;
+}
 .contact-center {
-    margin: auto;
-    margin-top: 2rem;
+    margin:auto;
 }
 
 /** sections **/
@@ -161,8 +168,14 @@ hr {
     border-top-left-radius: 1rem;
 }
 
-.footer .link {
-    color: white
+.footer .footer-link {
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    max-width: 157px;
 }
 
 .footer .footer-header {
@@ -179,6 +192,10 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
+}
+.footer .footer-list-item-inline {
+    display: inline;
+    padding: 0%;
 }
 
 /** projects **/
