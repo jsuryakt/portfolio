@@ -163,6 +163,36 @@ hr {
   /* bottom:30px; */
 }
 
+.neog-projects {
+  background-color: var(--off-white);
+  border-radius: 1rem;
+  padding: 1rem 0rem;
+  margin: 0.5rem;
+}
+
+.neog-projects hr {
+  margin: 0;
+}
+
+.neog-projects .p-remove-margin {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.neog-projects ul li h2 {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.neog-projects ul li {
+  padding: 1.5rem;
+  /* text-align: center; */
+}
+
+.neog-projects h1 {
+  text-align: center;
+}
+
 /** sections **/
 
 .section {
