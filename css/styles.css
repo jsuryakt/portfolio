@@ -5,6 +5,7 @@
   --secondary-color: #f45905;
   --off-white: #f3f4f6;
   --dark-gray: #6b7280;
+  --black: #000000;
 }
 
 html {
@@ -173,7 +174,10 @@ hr {
 .neog-projects hr {
   margin: 0;
 }
-
+#a-neog-url {
+  text-decoration: none;
+  color: var(--black);
+}
 .neog-projects .p-remove-margin {
   margin: 0;
   color: var(--primary-color);
