@@ -1,168 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
-    <title>blogs | jsuryakt</title>
-    <link rel="icon" 
-      type="image/png" 
-      href="images/favicon.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-0LYPYSESVH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-0LYPYSESVH");
-    </script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KL5J4WP');</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
+  <title>blogs | jsuryakt</title>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LYPYSESVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-0LYPYSESVH");
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KL5J4WP');</script>
   <!-- End Google Tag Manager -->
-  </head>
-  <body>
+</head>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL5J4WP"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL5J4WP" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navigation container">
-      <!-- <div class="nav-brand">Jayasurya</div> -->
-      <ul class="list-non-bullet nav-pills">
-        <li class="list-item-inline">
-          <a class="link" href="/">home</a>
-        </li>
-        <li class="list-item-inline">
-          <a class="link" href="/projects.html">projects</a>
-        </li>
-        <li class="list-item-inline">
-          <a class="link link-active" href="/blogs.html">blogs</a>
-        </li>
-      </ul>
-    </nav>
+  <nav class="navigation container">
+    <!-- <div class="nav-brand">Jayasurya</div> -->
+    <ul class="list-non-bullet nav-pills">
+      <li class="list-item-inline">
+        <a class="link" href="/">home</a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link" href="/projects.html">projects</a>
+      </li>
+      <li class="list-item-inline">
+        <a class="link link-active" href="/blogs.html">blogs</a>
+      </li>
+    </ul>
+  </nav>
 
-    <header class="hero">
-      <!-- <img class="hero-img" src="images/blog-page.svg" /> -->
-      <h1 class="hero-heading">
-        read my <span class="heading-inverted">blogs</span>
-      </h1>
-      <p class="hero-heading">
-        I document my journey of being a better Software Engineer.
-      </p>
-      <!-- <div class="text-center">
+  <!-- <header class="hero">
+    <img class="hero-img" src="images/blog-page.svg" />
+    <h1 class="hero-heading">
+      read my <span class="heading-inverted">blogs</span>
+    </h1>
+    <p class="hero-heading">
+      I document my journey of being a better Software Engineer.
+    </p>
+    <div class="text-center">
         <a href="#blogs"><i class="fas fa-chevron-down"></i></a>
-      </div> -->
-    </header>
-
-    <article class="container-center showcase-blog">
-        <p>
-            Once the user is authenticated and inside the home feed,
-            initially, all the posts are shown since the location access is not
-            enabled. The user is able to share posts to social media sites
-            such as Twitter, Instagram, Whatsapp, Facebook, LinkedIn etc.
-            After enabling the location, the user is prompted to confirm the
-            current location. The locality and administrative area of the
-            user are displayed. The posts are now filtered by location and
-            by default the range is set to 20kms. The user can customise
-            
-            the range from 1km to 1000kms. For accessibility, few
-            frequently used ranges are displayed as chip filters - 10km,
-            20km and 50km. A custom range chip button is displayed
-            which on tap will pop up the hidden custom range bar which
-            can be used to set range from 1-1000kms. Once the range is
-            updated, all the posts are refreshed and only those posts are
-            displayed which fall under the specified range. Each post has a
-            location detail with its latitude and longitude. We also have the
-            user’s current location latitude and longitude. If the range is set
-            as 20kms then a custom function will go through each post and
-            find the distance from the user’s current location. If the
-            distance falls under the specified range then the post is
-            displayed. This will continue for all the posts uploaded to the
-            app. If the range is updated, the custom function will run again
-            and fetch the posts which fall under the new range. The time
-            complexity of this function is O(n) where n is the number of
-            posts. We can also reduce the number of posts computed if the
-            posts grow to a large number and only compare the first
-            50-100 posts and compute the next few posts only when the
-            user scrolls over the pre-computed posts. This will definitely
-            improve the time complexity when the number of posts grows
-            to more than a million.
-        </p>
-    
-        <!-- <h2>
-          Incomprehensibility or readability? <small>That is the question.</small>
-        </h2>
-        <p>
-          The most well-known dummy text is the 'Lorem Ipsum', which is said to
-          have originated in the 16th century. Lorem Ipsum is composed in a
-          pseudo-Latin language which more or less corresponds to 'proper' Latin.
-          It contains a series of real Latin words. This ancient dummy text is
-          also incomprehensible, but it imitates the rhythm of most European
-          languages in Latin script. The advantage of its Latin origin and the
-          relative meaninglessness of Lorum Ipsum is that the text does not
-          attract attention to itself or distract the viewer's attention from the
-          layout.
-        </p> -->
-      </article>
-
-    <footer class="footer">
-      <div class="footer-header">
-        Contact me <span class="footer-light">@jsuryakt on all platforms</span>
       </div>
-      <ul class="social-links list-non-bullet">
-        <li class="footer-list-item-inline">
-          <a
-            class="footer-link"
-            target="_blank"
-            href="mailto:jsuryakt@gmail.com"
-          >
-            email
-          </a>
-        </li>
-        <li class="footer-list-item-inline">
-          <a
-            class="footer-link"
-            target="_blank"
-            href="https://github.com/jsuryakt"
-          >
-            github
-          </a>
-        </li>
-        <li class="footer-list-item-inline">
-          <a
-            class="footer-link"
-            target="_blank"
-            href="https://linkedin.com/in/jsuryakt"
-          >
-            linkedin
-          </a>
-        </li>
-        <li class="footer-list-item-inline">
-          <a
-            class="footer-link"
-            target="_blank"
-            href="https://twitter.com/jsuryakt"
-          >
-            twitter
-          </a>
-        </li>
-      </ul>
-      <a class="footer-light" target="_blank" href="mailto:jsuryakt@gmail.com"
-        >jsuryakt@gmail.com
-      </a>
-      <!-- <p class="footer-light">jsuryakt@gmail.com</p> -->
-    </footer>
-  </body>
+  </header> -->
+  <div class="container-center">
+  <div class="blog-box">
+    <article class="showcase-blog">
+      <h2>
+        How I created a custom geo-query function to find posts under a specified range from the current location.
+      </h2>
+
+      <div class="image-size">
+        <video
+          src="https://user-images.githubusercontent.com/63441093/128240407-50ca7941-853b-45e8-b7fd-0ce83808a22e.mp4"
+          data-canonical-src="https://user-images.githubusercontent.com/63441093/128240407-50ca7941-853b-45e8-b7fd-0ce83808a22e.mp4"
+          controls="controls" class="project-image"></video>
+          <p>fodome promo video</p>
+      </div>
+
+      <p>
+        fodome - This is an android app that connects food donors with the needy. The app has food posts and each post
+        has its location detail captured while uploading. Once the user is authenticated and inside the home feed page,
+        initially, all the posts are shown since the location access is not enabled. After enabling the location, the
+        user is prompted to confirm the current location. The posts are now filtered by location and by default the
+        range is set to 20kms. The user can customise the range from 1km to 1000kms. For accessibility, few frequently
+        used ranges are displayed as chip filters - 10km, 20km and 50km. A custom range chip button is displayed which
+        on tap will pop up the hidden custom range bar which can be used to set range from 1-1000kms. Once the range is
+        updated, all the posts are refreshed and only those posts are displayed which fall under the specified range.
+        Each post has a location detail with its latitude and longitude. We also have the user’s current location
+        latitude and longitude. If the range is set as 20kms then a custom function will go through each post and find
+        the distance between the user’s current location and the post location. If the distance falls under the
+        specified range then the post is displayed. This will continue for all the posts uploaded to the app. If the
+        range is updated, the custom function will run again and fetch the posts which fall under the new range. The
+        time complexity of this function is O(n) where n is the number of posts. We can also reduce the number of posts
+        computed if the posts grow to a large number and only compare the first 50-100 posts and compute the next few
+        posts only when the user scrolls over the pre-computed posts. This will definitely improve the time complexity
+        when the number of posts grows to more than a million.
+      </p>
+      <p>Download the app or check the source code on github.</p>
+      <a class="link link-primary" target="_blank"
+        href="https://drive.google.com/file/d/1RTSOwAUcClxDq4k3ueHRcGw8of0sdaDV/view">Download</a>
+      <a class="link link-secondary" target="_blank" href="https://github.com/jsuryakt/fodome-flutter">View Source</a>
+
+    </article>
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="footer-header">
+      Contact me <span class="footer-light">@jsuryakt on all platforms</span>
+    </div>
+    <ul class="social-links list-non-bullet">
+      <li class="footer-list-item-inline">
+        <a class="footer-link" target="_blank" href="mailto:jsuryakt@gmail.com">
+          email
+        </a>
+      </li>
+      <li class="footer-list-item-inline">
+        <a class="footer-link" target="_blank" href="https://github.com/jsuryakt">
+          github
+        </a>
+      </li>
+      <li class="footer-list-item-inline">
+        <a class="footer-link" target="_blank" href="https://linkedin.com/in/jsuryakt">
+          linkedin
+        </a>
+      </li>
+      <li class="footer-list-item-inline">
+        <a class="footer-link" target="_blank" href="https://twitter.com/jsuryakt">
+          twitter
+        </a>
+      </li>
+    </ul>
+    <a class="footer-light" target="_blank" href="mailto:jsuryakt@gmail.com">jsuryakt@gmail.com
+    </a>
+    <!-- <p class="footer-light">jsuryakt@gmail.com</p> -->
+  </footer>
+</body>
+
 </html>

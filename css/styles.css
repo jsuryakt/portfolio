@@ -177,11 +177,29 @@ hr {
   /* bottom:30px; */
 }
 
-.neog-projects {
+.neog-projects, .blog-box{
   background-color: var(--off-white);
   border-radius: 1rem;
-  padding: 1rem 0rem;
   margin: 0.5rem;
+}
+
+.neog-projects {
+  padding: 1rem 0rem;
+}
+
+.blog-box {
+  padding: 1rem;
+  margin: 2rem 0rem;
+}
+
+.blog-box p {
+  font-size: large;
+  line-height: 2rem;
+}
+
+.blog-box h2 {
+  font-size: 1.7em;
+  margin-top: 0;
 }
 
 .neog-projects hr {
@@ -272,5 +290,5 @@ hr {
 
 /** blogs **/
 .showcase-blog {
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
 }
