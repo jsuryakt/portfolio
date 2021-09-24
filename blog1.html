@@ -54,43 +54,68 @@
     </nav>
 
     <header class="hero">
-      <img class="hero-img" src="images/blog-page.svg" />
+      <!-- <img class="hero-img" src="images/blog-page.svg" /> -->
       <h1 class="hero-heading">
         read my <span class="heading-inverted">blogs</span>
       </h1>
       <p class="hero-heading">
         I document my journey of being a better Software Engineer.
       </p>
-      <div class="text-center">
+      <!-- <div class="text-center">
         <a href="#blogs"><i class="fas fa-chevron-down"></i></a>
-      </div>
+      </div> -->
     </header>
 
-    <ul class="list-non-bullet" id="blogs">
-      <li>
-        <article class="showcase-list container container-center">
-          <h1>A Primer on Python Programming Tutorial for beginners</h1>
-          <small>Jan, 2021</small>
-          <p>
-            Python has been the most dominant programming language in the
-            development community for quite a few years now. This is evident
-            from the fact that according to a recent survey by JetBrains 27% of
-            Budding Developers have either started learning python or they have
-            studied it in the past year. Python has been voted ad top
-            programming language of 2018 by IEEE. In a monthly ranking of
-            popular programming languages publishing by TIOBE, Python is now 3rd
-            just behind Java and C.
-          </p>
-
-          <a
-            class="link link-primary"
-            target="_blank"
-            href="blog1.html"
-            >Read More</a
-          >
-        </article>
-      </li>
-    </ul>
+    <article class="container-center showcase-blog">
+        <p>
+            Once the user is authenticated and inside the home feed,
+            initially, all the posts are shown since the location access is not
+            enabled. The user is able to share posts to social media sites
+            such as Twitter, Instagram, Whatsapp, Facebook, LinkedIn etc.
+            After enabling the location, the user is prompted to confirm the
+            current location. The locality and administrative area of the
+            user are displayed. The posts are now filtered by location and
+            by default the range is set to 20kms. The user can customise
+            
+            the range from 1km to 1000kms. For accessibility, few
+            frequently used ranges are displayed as chip filters - 10km,
+            20km and 50km. A custom range chip button is displayed
+            which on tap will pop up the hidden custom range bar which
+            can be used to set range from 1-1000kms. Once the range is
+            updated, all the posts are refreshed and only those posts are
+            displayed which fall under the specified range. Each post has a
+            location detail with its latitude and longitude. We also have the
+            user’s current location latitude and longitude. If the range is set
+            as 20kms then a custom function will go through each post and
+            find the distance from the user’s current location. If the
+            distance falls under the specified range then the post is
+            displayed. This will continue for all the posts uploaded to the
+            app. If the range is updated, the custom function will run again
+            and fetch the posts which fall under the new range. The time
+            complexity of this function is O(n) where n is the number of
+            posts. We can also reduce the number of posts computed if the
+            posts grow to a large number and only compare the first
+            50-100 posts and compute the next few posts only when the
+            user scrolls over the pre-computed posts. This will definitely
+            improve the time complexity when the number of posts grows
+            to more than a million.
+        </p>
+    
+        <!-- <h2>
+          Incomprehensibility or readability? <small>That is the question.</small>
+        </h2>
+        <p>
+          The most well-known dummy text is the 'Lorem Ipsum', which is said to
+          have originated in the 16th century. Lorem Ipsum is composed in a
+          pseudo-Latin language which more or less corresponds to 'proper' Latin.
+          It contains a series of real Latin words. This ancient dummy text is
+          also incomprehensible, but it imitates the rhythm of most European
+          languages in Latin script. The advantage of its Latin origin and the
+          relative meaninglessness of Lorum Ipsum is that the text does not
+          attract attention to itself or distract the viewer's attention from the
+          layout.
+        </p> -->
+      </article>
 
     <footer class="footer">
       <div class="footer-header">
