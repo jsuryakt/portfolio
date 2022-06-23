@@ -151,6 +151,10 @@ hr {
   color: var(--primary-color);
 }
 
+.curr-company {
+  text-decoration: none;
+}
+
 .div-contact-margin {
   text-align: center;
 }
