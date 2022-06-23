@@ -66,47 +66,50 @@
       </div>
   </header> -->
   <div class="container-center">
-  <div class="blog-box">
-    <article class="showcase-blog">
-      <h2>
-        How I created a custom geo-query function to find posts under a specified range from the current location.
-      </h2>
+    <div class="blog-box">
+      <article class="showcase-blog">
+        <h2>
+          How I created a custom geo-query function to find posts under a specified range from the current location.
+        </h2>
 
-      <div class="image-size">
-        <video
-          src="https://user-images.githubusercontent.com/63441093/128240407-50ca7941-853b-45e8-b7fd-0ce83808a22e.mp4"
-          data-canonical-src="https://user-images.githubusercontent.com/63441093/128240407-50ca7941-853b-45e8-b7fd-0ce83808a22e.mp4"
-          controls="controls" class="project-image"></video>
+        <div class="image-size">
+          <video
+            src="https://user-images.githubusercontent.com/63441093/128240407-50ca7941-853b-45e8-b7fd-0ce83808a22e.mp4"
+            data-canonical-src="https://user-images.githubusercontent.com/63441093/128240407-50ca7941-853b-45e8-b7fd-0ce83808a22e.mp4"
+            controls="controls" class="project-image"></video>
           <p>fodome promo video</p>
-      </div>
+        </div>
 
-      <p>
-        fodome - This is an android app that connects food donors with the needy. The app has food posts and each post
-        has its location detail captured while uploading. Once the user is authenticated and inside the home feed page,
-        initially, all the posts are shown since the location access is not enabled. After enabling the location, the
-        user is prompted to confirm the current location. The posts are now filtered by location and by default the
-        range is set to 20kms. The user can customise the range from 1km to 1000kms. For accessibility, few frequently
-        used ranges are displayed as chip filters - 10km, 20km and 50km. A custom range chip button is displayed which
-        on tap will pop up the hidden custom range bar which can be used to set range from 1-1000kms. Once the range is
-        updated, all the posts are refreshed and only those posts are displayed which fall under the specified range.
-        Each post has a location detail with its latitude and longitude. We also have the user’s current location
-        latitude and longitude. If the range is set as 20kms then a custom function will go through each post and find
-        the distance between the user’s current location and the post location. If the distance falls under the
-        specified range then the post is displayed. This will continue for all the posts uploaded to the app. If the
-        range is updated, the custom function will run again and fetch the posts which fall under the new range. The
-        time complexity of this function is O(n) where n is the number of posts. We can also reduce the number of posts
-        computed if the posts grow to a large number and only compare the first 50-100 posts and compute the next few
-        posts only when the user scrolls over the pre-computed posts. This will definitely improve the time complexity
-        when the number of posts grows to more than a million.
-      </p>
-      <p>Download the app or check the source code on github.</p>
-      <a class="link link-primary" target="_blank"
-        href="https://drive.google.com/file/d/1RTSOwAUcClxDq4k3ueHRcGw8of0sdaDV/view">Download</a>
-      <a class="link link-secondary" target="_blank" href="https://github.com/jsuryakt/fodome-flutter">View Source</a>
+        <p>
+          fodome - This is an android app that connects food donors with the needy. The app has food posts and each post
+          has its location detail captured while uploading. Once the user is authenticated and inside the home feed
+          page,
+          initially, all the posts are shown since the location access is not enabled. After enabling the location, the
+          user is prompted to confirm the current location. The posts are now filtered by location and by default the
+          range is set to 20kms. The user can customise the range from 1km to 1000kms. For accessibility, few frequently
+          used ranges are displayed as chip filters - 10km, 20km and 50km. A custom range chip button is displayed which
+          on tap will pop up the hidden custom range bar which can be used to set range from 1-1000kms. Once the range
+          is
+          updated, all the posts are refreshed and only those posts are displayed which fall under the specified range.
+          Each post has a location detail with its latitude and longitude. We also have the user’s current location
+          latitude and longitude. If the range is set as 20kms then a custom function will go through each post and find
+          the distance between the user’s current location and the post location. If the distance falls under the
+          specified range then the post is displayed. This will continue for all the posts uploaded to the app. If the
+          range is updated, the custom function will run again and fetch the posts which fall under the new range. The
+          time complexity of this function is O(n) where n is the number of posts. We can also reduce the number of
+          posts
+          computed if the posts grow to a large number and only compare the first 50-100 posts and compute the next few
+          posts only when the user scrolls over the pre-computed posts. This will definitely improve the time complexity
+          when the number of posts grows to more than a million.
+        </p>
+        <p>Download the app or check the source code on github.</p>
+        <a class="link link-primary" target="_blank"
+          href="https://drive.google.com/file/d/1RTSOwAUcClxDq4k3ueHRcGw8of0sdaDV/view">Download</a>
+        <a class="link link-secondary" target="_blank" href="https://github.com/jsuryakt/fodome-flutter">View Source</a>
 
-    </article>
+      </article>
+    </div>
   </div>
-</div>
 
   <footer class="footer">
     <div class="footer-header">

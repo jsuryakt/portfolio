@@ -35,6 +35,8 @@ hr {
 .container-center {
   max-width: 800px;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* image */
