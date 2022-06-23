@@ -151,7 +151,7 @@ hr {
   color: var(--primary-color);
 }
 
-.curr-company {
+#curr-company {
   text-decoration: none;
 }
 
