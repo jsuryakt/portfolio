@@ -1,7 +1,7 @@
 # Personal Portfolio 
 
 ## @neogcamp
-This repo contains source code for my portfolio hosted at [jsuryakt.codes](https://www.jsuryakt.codes)
+This repo contains source code for my portfolio hosted at [jsuryakt.codes](https://jsuryakt.netlify.app)
 
 ## Installation
 
