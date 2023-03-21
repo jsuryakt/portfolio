@@ -316,7 +316,7 @@ hr {
 
 .showcase-list::before {
   right: -1px;
-  top: 90%;
+  top: 85%;
 }
 
 .showcase-list::after {
@@ -330,13 +330,13 @@ hr {
 
 #projects > li::before {
   top: 25px;
-  left: 10%;
+  left: 25%;
   transform: rotate(90deg);
 }
 
 #projects > li::after {
   bottom: -55px;
-  left: 90%;
+  left: 75%;
   transform: rotate(90deg);
 }
 
