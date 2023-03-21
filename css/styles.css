@@ -44,10 +44,10 @@ hr {
 
 /* image */
 .image-size {
-    max-width: 600px;
-    margin: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .project-image {
   max-width: 100%;
@@ -186,7 +186,8 @@ hr {
   /* bottom:30px; */
 }
 
-.neog-projects, .blog-box{
+.neog-projects,
+.blog-box {
   background-color: var(--off-white);
   border-radius: 1rem;
   margin: 0.5rem;
@@ -295,6 +296,60 @@ hr {
 /** projects **/
 .showcase-list {
   padding: 2rem;
+  position: relative;
+}
+
+.showcase-list::before,
+.showcase-list::after,
+#projects > li::before,
+#projects > li::after {
+  background: linear-gradient(transparent, var(--secondary-color), transparent);
+  height: 140px;
+  width: 2px;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: top, right, left, opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+}
+
+.showcase-list::before {
+  right: -1px;
+  top: 90%;
+}
+
+.showcase-list::after {
+  left: -1px;
+  top: 10%;
+}
+
+#projects > li {
+  position: relative;
+}
+
+#projects > li::before {
+  top: 25px;
+  left: 10%;
+  transform: rotate(90deg);
+}
+
+#projects > li::after {
+  bottom: -55px;
+  left: 90%;
+  transform: rotate(90deg);
+}
+
+.showcase-list:hover::before,
+.showcase-list:hover::after {
+  top: 40%;
+  opacity: 1;
+}
+
+#projects > li:hover::before,
+#projects > li:hover::after {
+  left: 50%;
+  opacity: 1;
 }
 
 /** blogs **/
