@@ -346,6 +346,10 @@ hr {
   opacity: 1;
 }
 
+.showcase-list > p > a {
+  text-decoration: none;
+}
+
 #projects > li:hover::before,
 #projects > li:hover::after {
   left: 50%;
