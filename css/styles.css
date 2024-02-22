@@ -44,6 +44,9 @@ hr {
 
 /* image */
 .image-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 600px;
   margin: auto;
   margin-top: 1.5rem;
