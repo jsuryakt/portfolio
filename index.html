@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home | jsuryakt</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css"/>
-    <meta name="title" content="Jayasurya's Portfolio"/>
+    <link rel="stylesheet" href="css/modern/theme.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
+    <meta name="title" content="Jayasurya's Portfolio" />
     <meta name="description"
-          content="I love to solve problems and create beautiful things. Currently working as a Software Developer @digital.ai."/>
-    <meta name="keywords" content="jsuryakt, jayasurya kotian, jayasurya"/>
-    <meta name="robots" content="index, follow"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="language" content="English"/>
-    <meta name="author" content="Jayasurya"/>
+        content="I love to solve problems and create beautiful things. Currently working as a Software Developer @digital.ai." />
+    <meta name="keywords" content="jsuryakt, jayasurya kotian, jayasurya" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Jayasurya" />
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LYPYSESVH"></script>
@@ -34,7 +34,7 @@
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
-            w[l].push({"gtm.start": new Date().getTime(), event: "gtm.js"});
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
             var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s),
                 dl = l !== "dataLayer" ? "&l=" + l : "";
@@ -47,109 +47,147 @@
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe title="no-script" src="https://www.googletagmanager.com/ns.html?id=GTM-KL5J4WP" height="0" width="0"
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe title="no-script" src="https://www.googletagmanager.com/ns.html?id=GTM-KL5J4WP" height="0" width="0"
             style="display: none; visibility: hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<nav class="navigation container">
-    <!-- <div class="nav-brand">Jayasurya</div> -->
-    <ul class="list-non-bullet nav-pills">
-        <li class="list-item-inline">
-            <a class="link link-active" href="/">home</a>
-        </li>
-        <li class="list-item-inline">
-            <a class="link" href="./projects.html">projects</a>
-        </li>
-        <li class="list-item-inline">
-            <a class="link" href="./blogs.html">blogs</a>
-        </li>
-    </ul>
-</nav>
+    <nav class="navigation container">
+        <div class="nav-brand">
+            <a href="/" class="link">J<span style="color: var(--accent-primary)">S</span></a>
+        </div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="./projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="./blogs.html">blogs</a>
+            </li>
+            <li class="list-item-inline">
+                <div id="theme-switcher" class="theme-switcher" title="Switch Theme">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </li>
+        </ul>
+        <div id="mobile-menu-button" class="mobile-menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
 
-<header class="hero">
-    <img loading="eager" class="hero-img" src="images/hero.svg" alt="Hero"/>
-    <h1 class="hero-heading">
-        Hello World, I'm <span class="heading-inverted"> Jayasurya</span>
-    </h1>
-    <p class="hero-heading">
-        I love to solve problems and create beautiful things. <br/>Currently
-        working as a
-        <span class="heading-inverted">Software Developer at <span><a id="curr-company" target="_blank"
-                                                                      href="https://digital.ai">digital.ai</a></span></span>
-    </p>
-    <div class="div-contact-margin">
-        <a class="link link-primary" target="_blank"
-           href="https://rebrand.ly/jayasurya-latest-resume">Resume</a>
-        <a class="link link-secondary" target="_blank" href="mailto:jsuryakt@gmail.com">Contact me!</a>
-    </div>
-    <div class="text-center">
-        <a href="#tech"><i class="fas fa-chevron-down"></i></a>
-    </div>
-</header>
+    <header class="hero">
+        <div class="hero-content animate">
+            <img loading="eager" class="hero-img" src="images/hero.svg" alt="Hero" />
+            <h1 class="hero-heading">
+                Hello World, I'm <span class="heading-inverted"> Jayasurya</span>
+            </h1>
+            <p class="hero-heading">
+                I love to solve problems and create beautiful things. <br />Currently
+                working as a
+                <span class="heading-inverted">Software Developer at <span><a id="curr-company" target="_blank"
+                            href="https://digital.ai">digital.ai</a></span></span>
+            </p>
+            <div class="div-contact-margin">
+                <a class="link link-primary" target="_blank"
+                    href="https://rebrand.ly/jayasurya-latest-resume">Resume</a>
+                <a class="link link-secondary" target="_blank" href="mailto:jsuryakt@gmail.com">Contact me!</a>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#tech"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
 
-<section class="section" id="tech">
-    <div class="container container-center">
-        <img class="svg" src="images/technology.svg" alt="Technology"/>
-        <h1>technologies</h1>
-        <p class="display-flex-center">
-            I'm familiar with Java, Spring Framework, Angular, TypeScript, JavaScript,
-            HTML5, CSS3, Python, Git, ReactJS, and Web Hosting.
-        </p>
-    </div>
-</section>
+    <section class="section animate" id="tech">
+        <div class="container container-center">
+            <img class="svg" src="images/technology.svg" alt="Technology" />
+            <h1>technologies</h1>
+            <p class="display-flex-center">
+                I'm familiar with Java, Spring Framework, Angular, TypeScript, JavaScript,
+                HTML5, CSS3, Python, Git, ReactJS, and Web Hosting.
+            </p>
+            <div class="tech-grid">
+                <div class="tech-item"><i class="fab fa-java"></i><span>Java</span></div>
+                <div class="tech-item"><i class="fab fa-angular"></i><span>Angular</span></div>
+                <div class="tech-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                <div class="tech-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="tech-item"><i class="fab fa-react"></i><span>ReactJS</span></div>
+            </div>
+        </div>
+    </section>
 
-<section class="section ow">
-    <div class="container container-center">
-        <img class="svg" src="images/projects.svg" alt="Projects"/>
-        <h1>projects</h1>
-        <p class="display-flex-center">I like to showcase my work and thus, you can see my projects hosted online</p>
-        <a class="link link-primary anchor-center" href="./projects.html">Browse Projects</a>
-    </div>
-</section>
+    <section class="section ow animate">
+        <div class="container container-center">
+            <img class="svg" src="images/projects.svg" alt="Projects" />
+            <h1>projects</h1>
+            <p class="display-flex-center">I like to showcase my work and thus, you can see my projects hosted online
+            </p>
+            <a class="link link-primary anchor-center" href="./projects.html">Browse Projects</a>
+        </div>
+    </section>
 
-<section class="section">
-    <div class="container container-center">
-        <img class="svg" src="images/blog.svg" alt="Blogs"/>
-        <h1>blogs</h1>
-        <p class="display-flex-center">I am also working on some technical and non techincal blogs. I like to document my journey of learning.</p>
-        <a class="link link-secondary anchor-center" href="./blogs.html">Read Blogs</a>
-    </div>
-</section>
+    <section class="section animate">
+        <div class="container container-center">
+            <img class="svg" src="images/blog.svg" alt="Blogs" />
+            <h1>blogs</h1>
+            <p class="display-flex-center">I am also working on some technical and non techincal blogs. I like to
+                document my journey of learning.</p>
+            <a class="link link-secondary anchor-center" href="./blogs.html">Read Blogs</a>
+        </div>
+    </section>
 
-<footer class="footer">
-    <div class="footer-header">
-        Contact me <span class="footer-light">@jsuryakt on all platforms</span>
-    </div>
-    <ul class="social-links list-non-bullet">
-        <li class="footer-list-item-inline">
-            <a class="footer-link" target="_blank" href="mailto:jsuryakt@gmail.com">
-                email
-            </a>
-        </li>
-        <li class="footer-list-item-inline">
-            <a class="footer-link" target="_blank" href="https://github.com/jsuryakt">
-                github
-            </a>
-        </li>
-        <li class="footer-list-item-inline">
-            <a class="footer-link" target="_blank" href="https://linkedin.com/in/jsuryakt">
-                linkedin
-            </a>
-        </li>
-        <li class="footer-list-item-inline">
-            <a class="footer-link" target="_blank" href="https://twitter.com/jsuryakt">
-                twitter
-            </a>
-        </li>
-    </ul>
-    <a class="footer-light" target="_blank" href="mailto:jsuryakt@gmail.com">jsuryakt@gmail.com
-    </a>
-    <!-- <p class="footer-light">jsuryakt@gmail.com</p> -->
-</footer>
-<script type="application/ld+json">
+    <footer class="footer">
+        <div class="footer-header">
+            Contact me <span class="footer-light">@jsuryakt on all platforms</span>
+        </div>
+        <ul class="social-links list-non-bullet">
+            <li class="footer-list-item-inline">
+                <a class="footer-link" target="_blank" href="mailto:jsuryakt@gmail.com">
+                    <i class="fas fa-envelope"></i> email
+                </a>
+            </li>
+            <li class="footer-list-item-inline">
+                <a class="footer-link" target="_blank" href="https://github.com/jsuryakt">
+                    <i class="fab fa-github"></i> github
+                </a>
+            </li>
+            <li class="footer-list-item-inline">
+                <a class="footer-link" target="_blank" href="https://linkedin.com/in/jsuryakt">
+                    <i class="fab fa-linkedin"></i> linkedin
+                </a>
+            </li>
+            <li class="footer-list-item-inline">
+                <a class="footer-link" target="_blank" href="https://twitter.com/jsuryakt">
+                    <i class="fab fa-twitter"></i> twitter
+                </a>
+            </li>
+        </ul>
+        <a class="footer-light" target="_blank" href="mailto:jsuryakt@gmail.com">jsuryakt@gmail.com
+        </a>
+        <p class="footer-light">© 2025 Jayasurya Kotian. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="css/modern/scripts.js"></script>
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",

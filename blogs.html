@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/modern/theme.css" />
   <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
   <title>blogs | jsuryakt</title>
   <link rel="icon" type="image/png" href="images/favicon.ico">
+  <meta name="title" content="Jayasurya's Blogs" />
+  <meta name="description" content="Read my blogs - I document my journey of being a better Software Engineer." />
+  <meta name="keywords" content="jsuryakt, jayasurya kotian, jayasurya, blogs, software engineering" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LYPYSESVH"></script>
   <script>
@@ -32,6 +35,10 @@
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL5J4WP" height="0" width="0"
@@ -39,7 +46,9 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <nav class="navigation container">
-    <!-- <div class="nav-brand">Jayasurya</div> -->
+    <div class="nav-brand">
+      <a href="/" class="link">J<span style="color: var(--accent-primary)">S</span></a>
+    </div>
     <ul class="list-non-bullet nav-pills">
       <li class="list-item-inline">
         <a class="link" href="/">home</a>
@@ -50,56 +59,75 @@
       <li class="list-item-inline">
         <a class="link link-active" href="/blogs.html">blogs</a>
       </li>
+      <li class="list-item-inline">
+        <div id="theme-switcher" class="theme-switcher" title="Switch Theme">
+          <i class="fas fa-moon"></i>
+        </div>
+      </li>
     </ul>
+    <div id="mobile-menu-button" class="mobile-menu-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
   </nav>
 
   <header class="hero">
-    <img loading="eager" class="hero-img" src="images/blog-page.svg" />
-    <h1 class="hero-heading">
-      read my <span class="heading-inverted">blogs</span>
-    </h1>
-    <p class="hero-heading">
-      I document my journey of being a better Software Engineer.
-    </p>
+    <div class="hero-content animate">
+      <img loading="eager" class="hero-img" src="images/blog-page.svg" alt="Blog" />
+      <h1 class="hero-heading">
+        read my <span class="heading-inverted">blogs</span>
+      </h1>
+      <p class="hero-heading">
+        I document my journey of being a better Software Engineer.
+      </p>
+    </div>
     <div class="text-center">
       <a href="#blogs"><i class="fas fa-chevron-down"></i></a>
     </div>
   </header>
 
-  <ul class="list-non-bullet" id="blogs">
-    <li>
-      <article class="showcase-list container container-center">
-        <h1>How I created a custom geo-query function to find posts under a specified range from the current location.
-        </h1>
-        <small>July, 2021</small>
-        <p>
-          fodome - This is an android app that connects food donors with the needy. The app has food posts and each post
-          has its location detail captured while uploading. Once the user is authenticated and inside the home feed
-          page, initially, all the posts are shown since the location access is not enabled. After enabling the
-          location, the user is prompted to confirm the current location. The posts are now filtered by location and by
-          default the range is set to 20kms. The user can customise the range from 1km to 1000kms...
-        </p>
+  <section class="section animate">
+    <div class="container container-center">
+      <ul class="list-non-bullet" id="blogs">
+        <li>
+          <article class="showcase-list container-center animate">
+            <h1>How I created a custom geo-query function to find posts under a specified range from the current
+              location.
+            </h1>
+            <small>July, 2021</small>
+            <p>
+              fodome - This is an android app that connects food donors with the needy. The app has food posts and each
+              post
+              has its location detail captured while uploading. Once the user is authenticated and inside the home feed
+              page, initially, all the posts are shown since the location access is not enabled. After enabling the
+              location, the user is prompted to confirm the current location. The posts are now filtered by location and
+              by
+              default the range is set to 20kms. The user can customise the range from 1km to 1000kms...
+            </p>
 
-        <a class="link link-primary" target="_blank" href="blog1.html">Read More</a>
-      </article>
-    </li>
+            <a class="link link-primary" target="_blank" href="blog1.html">Read More</a>
+          </article>
+        </li>
 
-    <li>
-      <article class="showcase-list container container-center">
-        <h1>A look into python as a programming language to learn in 2021
-        </h1>
-        <small>Sept, 2021</small>
-        <p>
-          Let us investigate the python language and its significance in 2021. Python has been the maximum
-          dominant language withinside the network for pretty some years now. This is clear from the reality
-          that budding devs have begun studying python or they've studied it beyond a year. Python has been
-          voted as a pinnacle programming language in the latest surveys.....
-        </p>
+        <li>
+          <article class="showcase-list container-center animate">
+            <h1>A look into python as a programming language to learn in 2021
+            </h1>
+            <small>Sept, 2021</small>
+            <p>
+              Let us investigate the python language and its significance in 2021. Python has been the maximum
+              dominant language withinside the network for pretty some years now. This is clear from the reality
+              that budding devs have begun studying python or they've studied it beyond a year. Python has been
+              voted as a pinnacle programming language in the latest surveys.....
+            </p>
 
-        <a class="link link-primary" target="_blank" href="blog2.html">Read More</a>
-      </article>
-    </li>
-  </ul>
+            <a class="link link-primary" target="_blank" href="blog2.html">Read More</a>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer-header">
@@ -108,29 +136,36 @@
     <ul class="social-links list-non-bullet">
       <li class="footer-list-item-inline">
         <a class="footer-link" target="_blank" href="mailto:jsuryakt@gmail.com">
-          email
+          <i class="fas fa-envelope"></i> email
         </a>
       </li>
       <li class="footer-list-item-inline">
         <a class="footer-link" target="_blank" href="https://github.com/jsuryakt">
-          github
+          <i class="fab fa-github"></i> github
         </a>
       </li>
       <li class="footer-list-item-inline">
         <a class="footer-link" target="_blank" href="https://linkedin.com/in/jsuryakt">
-          linkedin
+          <i class="fab fa-linkedin"></i> linkedin
         </a>
       </li>
       <li class="footer-list-item-inline">
         <a class="footer-link" target="_blank" href="https://twitter.com/jsuryakt">
-          twitter
+          <i class="fab fa-twitter"></i> twitter
         </a>
       </li>
     </ul>
     <a class="footer-light" target="_blank" href="mailto:jsuryakt@gmail.com">jsuryakt@gmail.com
     </a>
-    <!-- <p class="footer-light">jsuryakt@gmail.com</p> -->
+    <p class="footer-light">© 2025 Jayasurya Kotian. All rights reserved.</p>
   </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="css/modern/scripts.js"></script>
 </body>
 
 </html>
