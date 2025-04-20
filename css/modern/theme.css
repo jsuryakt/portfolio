@@ -25,13 +25,13 @@
   /* Dark Theme Colors */
   --bg-primary: #1a202c;
   --bg-secondary: #2d3748;
-  --text-primary: #f7fafc;
+  --text-primary: #f8fafc;
   --text-secondary: #e2e8f0;
-  --accent-primary: #7c3aed;
-  --accent-secondary: #6d28d9;
-  --accent-gradient: linear-gradient(135deg, #7c3aed, #6d28d9);
+  --accent-primary: #a78bfa; /* Lighter purple for better visibility */
+  --accent-secondary: #8b5cf6;
+  --accent-gradient: linear-gradient(135deg, #a78bfa, #8b5cf6);
   --card-bg: #2d3748;
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   --nav-bg: rgba(26, 32, 44, 0.8);
   --nav-text: #f7fafc;
   --border-color: #4a5568;
@@ -40,6 +40,41 @@
   --footer-text: #f7fafc;
   --accent-primary-rgb: 124, 58, 237; /* #7c3aed */
   --accent-secondary-rgb: 109, 40, 217; /* #6d28d9 */
+}
+
+/* Fix specific visibility issues */
+[data-theme="dark"] .heading-inverted {
+  color: #a78bfa; /* Ensure heading-inverted is visible in dark mode */
+}
+
+[data-theme="dark"] .showcase-list small,
+[data-theme="dark"] .showcase-list p,
+[data-theme="dark"] .blog-box p {
+  color: #e2e8f0; /* Lighter color for better visibility */
+}
+
+[data-theme="dark"] .tech-item {
+  background: #374151; /* Slightly lighter than card-bg */
+  border-color: #4b5563;
+}
+
+[data-theme="dark"] .tech-item span {
+  color: #f1f5f9; /* Very light text for contrast */
+}
+
+/* Ensure cursor glow is visible in dark mode */
+[data-theme="dark"] .cursor-glow {
+  background: radial-gradient(
+    circle,
+    rgba(var(--accent-primary-rgb), 0.25) 0%,
+    rgba(var(--accent-primary-rgb), 0.1) 40%,
+    rgba(var(--accent-primary-rgb), 0) 70%
+  );
+}
+
+/* Fix for any link colors that might be hard to see */
+[data-theme="dark"] a:not(.link) {
+  color: #a78bfa;
 }
 
 /* Global Styles */
@@ -85,6 +120,26 @@ body {
   transition: width 0.2s, height 0.2s;
   z-index: 9999;
   opacity: 0.7;
+}
+
+/* Cursor glow effect */
+.cursor-glow {
+  pointer-events: none;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(var(--accent-primary-rgb), 0.15) 0%,
+    rgba(var(--accent-primary-rgb), 0.05) 40%,
+    rgba(var(--accent-primary-rgb), 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  z-index: 9995; /* Below other interactive elements */
+  opacity: 0.7;
+  will-change: left, top; /* Performance optimization */
+  transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
 h1,

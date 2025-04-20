@@ -1,97 +1,37 @@
 // Theme switching functionality
 document.addEventListener('DOMContentLoaded', () => {
-    // Custom cursor with shadow
-    // if (!document.querySelector('.cursor-dot') && !document.querySelector('.cursor-dot-outline')) {
-    //     const cursorDot = document.createElement('div');
-    //     const cursorDotOutline = document.createElement('div');
-    //     const cursorShadow = document.createElement('div');
+    // Create cursor glow effect
+    const cursorGlow = document.createElement('div');
+    cursorGlow.classList.add('cursor-glow');
+    document.body.appendChild(cursorGlow);
+    
+    // Track mouse position for glow
+    document.addEventListener('mousemove', (e) => {
+        // Update the glow position with a slight delay (no easing)
+        cursorGlow.style.left = e.clientX + 'px';
+        cursorGlow.style.top = e.clientY + 'px';
+    });
+    
+    // Handle hover effects on interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .link, .tech-item, .showcase-list, input, textarea, .theme-switcher');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursorGlow.style.width = '300px';
+            cursorGlow.style.height = '300px';
+            cursorGlow.style.opacity = '0.9';
+        });
         
-    //     cursorDot.classList.add('cursor-dot');
-    //     cursorDotOutline.classList.add('cursor-dot-outline');
-    //     cursorShadow.classList.add('cursor-shadow');
-        
-    //     document.body.appendChild(cursorDot);
-    //     document.body.appendChild(cursorDotOutline);
-    //     document.body.appendChild(cursorShadow);
-        
-    //     let mouseX = 0;
-    //     let mouseY = 0;
-    //     let dotX = 0;
-    //     let dotY = 0;
-    //     let outlineX = 0;
-    //     let outlineY = 0;
-        
-    //     // Show cursor elements once page is loaded
-    //     setTimeout(() => {
-    //         cursorDot.style.opacity = '1';
-    //         cursorDotOutline.style.opacity = '1';
-    //         cursorShadow.style.opacity = '1';
-    //     }, 500);
-        
-    //     // Track mouse position
-    //     document.addEventListener('mousemove', (e) => {
-    //         mouseX = e.clientX;
-    //         mouseY = e.clientY;
-
-    //         // Update the shadow position
-    //         cursorShadow.style.left = mouseX + 'px';
-    //         cursorShadow.style.top = mouseY + 'px';
-    //     });
-        
-    //     // Animate cursor movement
-    //     const animate = () => {
-    //         // Smooth animation for dot
-    //         dotX += (mouseX - dotX) * 0.2;
-    //         dotY += (mouseY - dotY) * 0.2;
-            
-    //         // Slower follow for outline
-    //         outlineX += (mouseX - outlineX) * 0.1;
-    //         outlineY += (mouseY - outlineY) * 0.1;
-            
-    //         // Position cursor elements
-    //         cursorDot.style.transform = `translate(${dotX}px, ${dotY}px)`;
-    //         cursorDotOutline.style.transform = `translate(${outlineX}px, ${outlineY}px)`;
-            
-    //         requestAnimationFrame(animate);
-    //     };
-        
-    //     animate();
-        
-    //     // Handle cursor over interactive elements
-    //     const handleCursorOverInteractiveElements = () => {
-    //         const interactiveElements = document.querySelectorAll('a, button, .link, .tech-item, .showcase-list, input, textarea, .theme-switcher');
-            
-    //         interactiveElements.forEach(el => {
-    //             el.addEventListener('mouseenter', () => {
-    //                 cursorDot.style.transform = 'translate(-50%, -50%) scale(1.5)';
-    //                 cursorDotOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-    //                 cursorDotOutline.style.borderColor = 'var(--accent-secondary)';
-    //                 cursorShadow.style.width = '40px';
-    //                 cursorShadow.style.height = '40px';
-    //             });
-                
-    //             el.addEventListener('mouseleave', () => {
-    //                 cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-    //                 cursorDotOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-    //                 cursorDotOutline.style.borderColor = 'var(--accent-primary)';
-    //                 cursorShadow.style.width = '30px';
-    //                 cursorShadow.style.height = '30px';
-    //             });
-    //         });
-    //     };
-        
-    //     // Initialize interactive elements handling
-    //     setTimeout(handleCursorOverInteractiveElements, 1000);
-        
-    //     // Disable custom cursor on touch devices
-    //     if ('ontouchstart' in window) {
-    //         document.body.classList.add('touch-device');
-    //         cursorDot.style.display = 'none';
-    //         cursorDotOutline.style.display = 'none';
-    //         cursorShadow.style.display = 'none';
-    //         document.body.style.cursor = 'auto';
-    //     }
-    // }
+        el.addEventListener('mouseleave', () => {
+            cursorGlow.style.width = '200px';
+            cursorGlow.style.height = '200px';
+            cursorGlow.style.opacity = '0.7';
+        });
+    });
+    
+    // Disable glow on touch devices
+    if ('ontouchstart' in window) {
+        cursorGlow.style.display = 'none';
+    }
 
     // Initialize preloader
     const preloader = document.querySelector('.preloader');
