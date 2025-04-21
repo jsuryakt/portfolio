@@ -32,7 +32,7 @@
   --accent-gradient: linear-gradient(135deg, #a78bfa, #8b5cf6);
   --card-bg: #2d3748;
   --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  --nav-bg: rgba(0,0,0, 0.8);
+  --nav-bg: rgba(0, 0, 0, 0.8);
   --nav-text: #f7fafc;
   --border-color: #4a5568;
   --button-hover: #6d28d9;
@@ -464,6 +464,17 @@ p.hero-heading {
   gap: 1.5rem;
   max-width: 800px;
   padding: 0 0.5rem;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+  transform-origin: center;
+  will-change: transform, gap;
+}
+
+/* Add spread effect on hover */
+.tech-grid:hover {
+  padding: 2rem;
+  gap: 2.5rem;
+  transform: scale(1.1);
 }
 
 .tech-item {
