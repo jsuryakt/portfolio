@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
-    <title>blogs | jsuryakt</title>
+    <title>Python in 2021 | jsuryakt</title>
     <link rel="icon" type="image/png" href="images/favicon.ico">
+    <meta name="title" content="Python in 2021 | jsuryakt" />
+    <meta name="description" content="A look into python as a programming language to learn in 2021." />
+    <meta name="keywords" content="jsuryakt, jayasurya kotian, jayasurya, python, programming language, 2021" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LYPYSESVH"></script>
     <script>
@@ -32,6 +35,10 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL5J4WP" height="0" width="0"
@@ -39,7 +46,9 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <nav class="navigation container">
-        <!-- <div class="nav-brand">Jayasurya</div> -->
+        <div class="nav-brand">
+            <a href="/" class="link">J<span style="color: var(--accent-primary)">S</span></a>
+        </div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
                 <a class="link" href="/">home</a>
@@ -50,48 +59,115 @@
             <li class="list-item-inline">
                 <a class="link link-active" href="/blogs.html">blogs</a>
             </li>
+            <li class="list-item-inline">
+                <div id="theme-switcher" class="theme-switcher" title="Switch Theme">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </li>
         </ul>
+        <div id="mobile-menu-button" class="mobile-menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </nav>
 
-    <!-- <header class="hero">
-    <img class="hero-img" src="images/blog-page.svg" />
-    <h1 class="hero-heading">
-      read my <span class="heading-inverted">blogs</span>
-    </h1>
-    <p class="hero-heading">
-      I document my journey of being a better Software Engineer.
-    </p>
-    <div class="text-center">
-        <a href="#blogs"><i class="fas fa-chevron-down"></i></a>
-      </div>
-  </header> -->
-    <div class="container-center">
-        <div class="blog-box">
-            <article class="showcase-blog">
-                <h2>
-                    A look into python as a programming language to learn in 2021
-                </h2>
-
-                <p>
-                    Let us investigate the python language and its significance in 2021. Python has been the maximum
-                    dominant language withinside the network for pretty some years now. This is clear from the reality
-                    that budding devs have begun studying python or they've studied it beyond a year. Python has been
-                    voted as a pinnacle programming language in the latest surveys. In a month-to-month rating of famous
-                    programming languages, Python is now third after Java and C. It has emerged so, because of the go-to
-                    language for website development(Django or Flask), software development, machine learning, due to
-                    the number of libraries and additionally programs associated with Big Data. Its recognition stems
-                    from numerous motives like Its exceptionally clean to examine, Its syntax is essentially readable
-                    and lacks the complexities of other competing languages. So devs can focus on making use of logic in
-                    place of spending infinite hours focusing on minute syntax details. It's a totally flexible
-                    language. All offerings primarily based totally on API and libraries additionally guide python
-                    development. It is also object-oriented. It's business-orientated You can construct any kind of net
-                    software, software, GUI on python regardless of any enterprise they're going to be deployed for.
-                    It's getting used at Netflix & Google and also in startups.
-                </p>
-
-            </article>
+    <header class="hero blog-hero">
+        <div class="hero-content animate">
+            <h1 class="hero-heading">
+                <span class="heading-inverted">Python</span> in 2021
+            </h1>
+            <p class="hero-heading">
+                A look into python as a programming language to learn in 2021.
+            </p>
+            <small class="blog-date">September, 2021</small>
         </div>
-    </div>
+    </header>
+
+    <section class="section animate">
+        <div class="container container-center blog-container">
+            <div class="blog-box">
+                <article class="showcase-blog">
+                    <div class="image-size blog-image-container">
+                        <img src="https://miro.medium.com/max/1400/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+                            alt="Python Programming" class="project-image">
+                        <p class="blog-image-caption">Python Programming</p>
+                    </div>
+
+                    <h2>Why is Python Popular?</h2>
+                    <p class="blog-paragraph">
+                        Python has been the most dominant programming language in the developer community for several
+                        years now.
+                        This is evident from the fact that many budding developers have started learning Python as their
+                        first programming
+                        language. In recent surveys, Python has consistently been voted as a top programming language.
+                    </p>
+
+                    <h3>Python's Strengths</h3>
+                    <ul class="blog-list">
+                        <li><span class="heading-inverted">Easy to Learn:</span> Simple syntax that resembles natural
+                            language</li>
+                        <li><span class="heading-inverted">Versatility:</span> Used in web development, data science,
+                            AI, machine learning, automation, and more</li>
+                        <li><span class="heading-inverted">Rich Library Ecosystem:</span> Vast collection of libraries
+                            and frameworks that simplify complex tasks</li>
+                        <li><span class="heading-inverted">Strong Community Support:</span> Large, active community that
+                            contributes to open-source projects</li>
+                        <li><span class="heading-inverted">Cross-Platform Compatibility:</span> Runs on Windows, macOS,
+                            Linux, and more</li>
+                    </ul>
+
+                    <h3>Key Use Cases in 2021</h3>
+                    <p class="blog-paragraph">
+                        In 2021, Python continues to dominate in several domains:
+                    </p>
+
+                    <h4>1. Data Science & Machine Learning</h4>
+                    <p class="blog-paragraph blog-section">
+                        Libraries like NumPy, Pandas, Matplotlib, and scikit-learn have made Python the go-to language
+                        for data analysis and machine learning.
+                        The rise of TensorFlow and PyTorch has further cemented Python's position in AI research and
+                        development.
+                    </p>
+
+                    <h4>2. Web Development</h4>
+                    <p class="blog-paragraph blog-section">
+                        Frameworks like Django and Flask offer robust solutions for building web applications. Django's
+                        "batteries included" philosophy
+                        provides everything needed for rapid development of secure websites.
+                    </p>
+
+                    <h4>3. Automation & Scripting</h4>
+                    <p class="blog-paragraph blog-section">
+                        Python excels at automating repetitive tasks. From simple file operations to complex system
+                        administration,
+                        Python scripts can save countless hours of manual work.
+                    </p>
+
+                    <h3>Looking Forward</h3>
+                    <p class="blog-paragraph">
+                        Python's popularity shows no signs of waning in the coming years. With continuous improvements
+                        to performance
+                        (like the Mojo project) and increasing adoption in emerging fields like quantum computing,
+                        Python is
+                        well-positioned to remain a dominant programming language.
+                    </p>
+
+                    <p class="blog-paragraph">
+                        Whether you're a beginner looking to enter the technology field or an experienced developer
+                        exploring new domains,
+                        Python offers an accessible path with abundant resources and opportunities.
+                    </p>
+
+                    <div class="blog-action-buttons">
+                        <a class="link link-primary" href="/blogs.html">Back to Blogs</a>
+                        <a class="link link-secondary" target="_blank" href="https://www.python.org/">Visit
+                            Python.org</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-header">
@@ -100,29 +176,35 @@
         <ul class="social-links list-non-bullet">
             <li class="footer-list-item-inline">
                 <a class="footer-link" target="_blank" href="mailto:jsuryakt@gmail.com">
-                    email
+                    <i class="fas fa-envelope"></i> email
                 </a>
             </li>
             <li class="footer-list-item-inline">
                 <a class="footer-link" target="_blank" href="https://github.com/jsuryakt">
-                    github
+                    <i class="fab fa-github"></i> github
                 </a>
             </li>
             <li class="footer-list-item-inline">
                 <a class="footer-link" target="_blank" href="https://linkedin.com/in/jsuryakt">
-                    linkedin
+                    <i class="fab fa-linkedin"></i> linkedin
                 </a>
             </li>
             <li class="footer-list-item-inline">
                 <a class="footer-link" target="_blank" href="https://twitter.com/jsuryakt">
-                    twitter
+                    <i class="fab fa-twitter"></i> twitter
                 </a>
             </li>
         </ul>
-        <a class="footer-light" target="_blank" href="mailto:jsuryakt@gmail.com">jsuryakt@gmail.com
-        </a>
-        <!-- <p class="footer-light">jsuryakt@gmail.com</p> -->
+        <a class="footer-light" target="_blank" href="mailto:jsuryakt@gmail.com">jsuryakt@gmail.com</a>
+        <p class="footer-light">© 2025 Jayasurya Kotian. All rights reserved.</p>
     </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="css/modern/scripts.js"></script>
 </body>
 
 </html>
