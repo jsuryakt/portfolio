@@ -477,10 +477,12 @@ p.hero-heading {
 }
 
 /* Add spread effect on hover */
-.tech-grid:hover {
-  padding: 2rem;
-  gap: 2.5rem;
-  transform: scale(1.1);
+@media (min-width: 769px) {
+  .tech-grid:hover {
+    padding: 2rem;
+    gap: 2.5rem;
+    transform: scale(1.1);
+  }
 }
 
 .tech-item {
