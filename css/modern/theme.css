@@ -32,7 +32,7 @@
   --accent-gradient: linear-gradient(135deg, #a78bfa, #8b5cf6);
   --card-bg: #2d3748;
   --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  --nav-bg: rgba(26, 32, 44, 0.8);
+  --nav-bg: rgba(0,0,0, 0.8);
   --nav-text: #f7fafc;
   --border-color: #4a5568;
   --button-hover: #6d28d9;
@@ -152,6 +152,7 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .section {
@@ -298,7 +299,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 90vh;
   position: relative;
   overflow: hidden;
 }
@@ -309,7 +310,8 @@ hr {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
+  padding: 0 1rem;
 }
 
 .hero::before {
@@ -341,23 +343,36 @@ hr {
 }
 
 .hero-heading {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(3.5rem, 10vw, 5rem);
   background: var(--accent-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  font-weight: 800;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  max-width: 100%;
+}
+
+.hero-heading:hover {
+  transform: scale(1.03);
 }
 
 p.hero-heading {
-  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  line-height: 1.5;
   margin-bottom: 2rem;
+  margin-top: 0;
   color: var(--text-secondary);
-  max-width: 600px;
+  max-width: 800px;
   -webkit-text-fill-color: var(--text-secondary);
   background: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  transform: none;
 }
 
 .heading-inverted {
@@ -436,11 +451,17 @@ p.hero-heading {
 }
 
 /* Technologies Grid */
+
+.p-description {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 1.5rem;
-  margin: 2rem auto;
   max-width: 800px;
   padding: 0 0.5rem;
 }
@@ -461,6 +482,8 @@ p.hero-heading {
   overflow: hidden;
   z-index: 1;
   word-break: break-word;
+  width: 150px;
+  height: 150px;
 }
 
 .tech-item::before {
@@ -820,7 +843,7 @@ p.hero-heading {
 .loader {
   width: 50px;
   height: 50px;
-  border: 5px solid var(--border-color);
+  border: 3px solid var(--border-color);
   border-radius: 50%;
   border-top-color: var(--accent-primary);
   animation: spin 1s ease-in-out infinite;
@@ -964,12 +987,7 @@ p.hero-heading {
     width: 200px;
   }
 
-  .hero-heading {
-    font-size: 1.8rem;
-  }
-
   p.hero-heading {
-    font-size: 1rem;
     margin-bottom: 1.5rem;
   }
 
@@ -981,21 +999,6 @@ p.hero-heading {
 
   .section h1 {
     font-size: 1.8rem;
-  }
-
-  /* Tech Grid */
-  .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 0 0.5rem;
-  }
-
-  .tech-item {
-    padding: 1rem;
-  }
-
-  .tech-item i {
-    font-size: 2rem;
   }
 
   /* Projects & Cards */
@@ -1056,14 +1059,6 @@ p.hero-heading {
 @media (max-width: 480px) {
   .hero-img {
     width: 180px;
-  }
-
-  .hero-heading {
-    font-size: 1.5rem;
-  }
-
-  p.hero-heading {
-    font-size: 0.9rem;
   }
 
   .tech-grid {
