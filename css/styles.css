@@ -295,7 +295,7 @@ hr {
 /* Hero Section */
 
 header {
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .hero {
@@ -993,14 +993,6 @@ p.hero-heading {
   }
 }
 
-/* Media Queries */
-@media (max-width: 992px) {
-  .showcase-list,
-  .neog-projects ul li {
-    width: calc(50% - 1rem);
-  }
-}
-
 @media (max-width: 768px) {
   /* Navigation */
   .navigation {
@@ -1126,6 +1118,10 @@ p.hero-heading {
 }
 
 @media (max-width: 480px) {
+  header {
+    height: 75vh;
+  }
+
   .hero-img {
     width: 180px;
   }
