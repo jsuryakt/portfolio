@@ -1121,7 +1121,7 @@ p.hero-heading {
 
 @media (max-width: 480px) {
   header {
-    height: 75vh;
+    height: 85vh;
   }
 
   .hero-img {
